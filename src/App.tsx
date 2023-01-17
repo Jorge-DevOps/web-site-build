@@ -1,33 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import CustomizedProgressBars from './progressBar'
+import site from './assets/website.png'
+import instagram from './assets/instagram.svg'
+import youtube from './assets/youtube.svg'
+import facebook from './assets/facebook.svg'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <div className='container-web-site' >
+        <div className='container-title'>
+          <h1 className='title'>Sitio web en <br /> construcción</h1>
+
+        </div>
+        <img src={site} className="webSite" alt="React logo" />
+        <div className='container-social-media'>
+          <a href="https://www.instagram.com/">
+
+            <img src={instagram} className="social-media" alt="React logo" />
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src={youtube} className="social-media" alt="React logo" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src={facebook} className="social-media" alt="React logo" />
+          </a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+      <CustomizedProgressBars />
+    </>
+
   )
 }
 

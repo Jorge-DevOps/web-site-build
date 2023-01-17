@@ -1,34 +1,83 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.webSite {
+  width: 100vw;
+  height: 100vh;
+  max-width: 80rem;
+  position: absolute;
+  top: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.container-web-site {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background: black;
+  flex-direction: column;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.container-title {
+  z-index: 1;
+  color: white;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.title {
+  font-size: 6rem;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+img.social-media {
+  width: 4rem;
+  filter: invert(1);
+  margin: 7rem 1rem;
+}
+
+.container-social-media {
+  z-index: 1;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (max-width: 768px) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
+  }
+
+  img.social-media {
+    width: 2rem ;
+    filter: invert(1);
+    margin: 5rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .webSite {
+    max-height: 36rem;
+    top: auto;
+  }
+
+  .container-web-site {
+    height: 100vh
   }
 }
 
