@@ -29,7 +29,9 @@
 
 }
 
-img.social-media {
+
+
+.social-media {
   width: 4rem;
   filter: invert(1);
   margin: 7rem 1rem;
@@ -62,13 +64,19 @@ img.social-media {
   }
 
   img.social-media {
-    width: 2rem ;
+    width: 2rem;
     filter: invert(1);
-    margin: 5rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .container-social-media {
+    flex-direction: column;
+    display: flex;
   }
 
   .title {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .webSite {
