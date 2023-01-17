@@ -18,14 +18,14 @@ function App() {
         </div>
         <img src={site} className="webSite" alt="React logo" />
         <div className='container-social-media'>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/javieralfonsoabogados/?hl=es">
 
             <img src={instagram} className="social-media" alt="React logo" />
           </a>
           <a href="https://www.youtube.com/">
             <img src={youtube} className="social-media" alt="React logo" />
           </a>
-          <a href="https://www.facebook.com/">
+          <a href="https://www.facebook.com/javieralfonsoabogados/">
             <img src={facebook} className="social-media" alt="React logo" />
           </a>
         </div>
