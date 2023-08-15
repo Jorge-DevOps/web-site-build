@@ -96,3 +96,29 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Estilos para la imagen de escritorio */
+.webSite {
+  display: block;
+  /* Por defecto, se mostrará en escritorio */
+}
+
+/* Estilos para la imagen en dispositivos móviles */
+.webSite-mobile {
+  display: none;
+  /* Por defecto, oculta la imagen en móviles */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .webSite {
+    display: none;
+    /* Oculta la imagen de escritorio en móviles */
+  }
+
+  .webSite-mobile {
+    display: block;
+    width: 100%;
+    position: absolute;
+  }
+}
