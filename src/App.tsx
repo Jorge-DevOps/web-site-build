@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import CustomizedProgressBars from './progressBar'
-import site from './assets/website.png'
+import site from './assets/6261569.jpg'
 import instagram from './assets/instagram.svg'
 import youtube from './assets/youtube.svg'
 import facebook from './assets/facebook.svg'
@@ -16,18 +16,18 @@ function App() {
           <h1 className='title'>Sitio web en <br /> construcción</h1>
 
         </div>
-        <img src={site} className="webSite" alt="React logo" />
+        <img src={site} style={{ filter: 'blur(8px)' }} className="webSite" alt="React logo" />
         <div className='container-social-media'>
-          <a href="https://www.instagram.com/javieralfonsoabogados/?hl=es">
+          <a href="https://www.instagram.com/cesarramirezabogados/">
 
             <img src={instagram} className="social-media" alt="React logo" />
           </a>
-          <a href="https://www.youtube.com/">
+          {/* <a href="https://www.youtube.com/">
             <img src={youtube} className="social-media" alt="React logo" />
           </a>
           <a href="https://www.facebook.com/javieralfonsoabogados/">
             <img src={facebook} className="social-media" alt="React logo" />
-          </a>
+          </a> */}
         </div>
       </div>
       <CustomizedProgressBars />
