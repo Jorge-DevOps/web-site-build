@@ -15,7 +15,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     },
     [`& .${linearProgressClasses.bar}`]: {
         borderRadius: 5,
-        backgroundColor: theme.palette.mode === 'light' ? '#A08357' : '#b3642d',
+        backgroundColor: theme.palette.mode === 'light' ? '#' : '#b3642d',
     },
 }));
 
@@ -29,7 +29,7 @@ export default function CustomizedProgressBars() {
         if (!timer.current) {
             timer.current = setInterval(() => {
                 setProgress((prev) => {
-                    if (prev < 20) {
+                    if (prev < 50) {
                         return prev + 1;
                     }
                     if (prev === 100) {
